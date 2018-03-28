@@ -1,0 +1,140 @@
+body {
+    background-color: #FFF;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+a,
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+.navbar {
+    padding: 1.5rem;
+}
+
+.navbar .nav-item {
+    padding: 0.5rem;
+}
+
+.bg-custom,
+.header {
+    background-color: purple;
+    color: #fff;
+}
+
+.header,
+.header h1 {
+    padding: .5rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.leading-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 7.5rem;
+}
+/* List Item */
+.list-item {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.list-contents h1 {
+    font-size: 1.5rem;
+}
+
+.list-item a, .list-item a:hover {
+    color: #FFF;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* Items div in lists.nbs */
+
+#items {
+    width: 100%;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#items ul {
+    margin-bottom: 0;
+}
+/* trigger page */
+#trigger .svg-inline--fa.fa-w-14, #trigger .svg-inline--fa.fa-w-16 {
+    height: 50px;
+    width: 50px;
+}
+
+#trigger > .list-detail {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+#trigger-options {
+    width: 100%;
+}
+/* list-details UL on 'choose trigger' / trigger.html */
+.list-detail, .elem-info, .list-option{
+    padding: .5rem;
+    color: #FFF;
+    margin: .5rem;
+    border-radius: 10px;
+}
+
+.list-detail {
+    width: 250px;
+    height: 250px;
+}
+
+.elem-info {
+    width: 400px;
+    height: 150px;
+}
+
+.list-option {
+    margin: 2rem auto;
+}
+
+.list-detail h1, .elem-info h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.list-detail .description, .elem-info .description {
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* Footer details */
+.main-footer {
+    margin-top: 2rem;
+    color: #222;
+    border-top: 1px solid black;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+@media (max-width: 963px) {
+    .leading-text {
+        font-size: 4rem;
+    }
+}
+
+.service .tiles {
+    width: 100px;
+}
+
+#output {
+    font-size: 2rem;
+}

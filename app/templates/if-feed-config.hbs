@@ -1,0 +1,26 @@
+
+<div id="welcome">
+        <div id="trigger">{{fa-icon "rss" style="color: #FFF; background-color:rgb(237,117,5); border-radius: 10px; padding: 10px;"}}</div>
+        <h1 class="display-4" style="font-weight: 600;">Configure Trigger</h1>
+        <p class="text-muted">Step 2 of 6</p>
+</div>
+
+{{!-- <form class="form-horizontal" {{action "saveURL" on="submit"}} novalidate>
+    <div class="form-group">
+        <label for="feedURL" class="control-label">Feed URL</label>
+        {{input type="text" id="feedURL" value=feedURL class="form-control"}}
+    </div>
+    <div class="form-group">
+        <button class="btn btn-light">Continue</button>
+    </div>
+</form> --}}
+
+{{#validated-form
+  model        = (changeset model.feed UserValidations)
+  on-submit    = (action "saveURL")
+  submit-label = 'Continue' as |f|}}
+ 
+  {{f.input label="Input a Feed URL *" type="text" id="feedURL" name="feedURL"}}
+
+  {{f.submit label="Continue" }}
+{{/validated-form}}

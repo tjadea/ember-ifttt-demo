@@ -1,0 +1,14 @@
+{{outlet}}
+<br><br>
+<h2>List of Actions</h2>
+<style>
+    a, a:hover {
+    color: #FFF;
+    }
+</style>
+
+<div id="items" class="row">
+{{#each model as |singleAction|}}
+  {{action-item class="col-sm-6 col-md-4" action=singleAction}}
+{{/each}}
+</div>

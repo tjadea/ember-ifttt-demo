@@ -1,0 +1,18 @@
+{{outlet}}
+
+<style>
+    a, a:hover {
+    color: #FFF;
+    }
+</style>
+
+<div id="welcome">
+        <h1 class="display-4" style="font-weight: 600;">Choose action Service</h1>
+        <p class="text-muted">Step 3 of 6</p>
+</div>
+
+<div id="items" class="row">
+{{#each model as |singleAction|}}
+  {{action-item class="col-sm-6 col-md-4" action=singleAction}}
+{{/each}}
+</div>
