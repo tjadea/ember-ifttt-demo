@@ -1,7 +1,7 @@
 body {
     background-color: #FFF;
     text-align: center;
-    font-family: Helvetica, sans-serif;
+    // font-family: Helvetica, sans-serif;
 }
 
 a,
@@ -40,6 +40,10 @@ a:hover {
     flex-direction: column;
     font-weight: 600;
     font-size: 7.5rem;
+}
+
+.leading-text i.fa {
+    margin: 0 auto;
 }
 /* List Item */
 .list-item {
