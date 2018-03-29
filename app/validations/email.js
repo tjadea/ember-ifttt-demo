@@ -6,8 +6,13 @@ import {
   } from 'ember-changeset-validations/validators';
   
   export default {
-    emailADR: [validatePresence(true),
+    emailAddress: [
+      validatePresence({ presence: true,
+        message: 'Please input a valid email address'}),
       validateLength({ allowBlank: false }),
-      validateFormat({ type: 'email' }),
+      validateFormat({
+        // type: 'email',
+        regex: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/      
+      }),
     ]
   };

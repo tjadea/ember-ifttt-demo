@@ -1,5 +1,4 @@
-{{outlet}}
-<br><br>
+{{!-- Displays a list of triggers (need further future testing if more triggers implemented) --}}
 <style>
     a, a:hover {
     color: #FFF;
@@ -9,13 +8,13 @@
     text-align: center;
     }
 </style>
-
+{{!-- Header styling / page information --}}
 <div id="welcome">
         <div id="trigger">{{fa-icon "rss" style="color: #FFF; background-color:rgb(237,117,5); border-radius: 10px; padding: 10px;"}}</div>
         <h1 class="display-4" style="font-weight: 600;">Choose Trigger</h1>
         <p class="text-muted">Step 2 of 6</p>
 </div>
-{{!-- Renamed Trigger to type due to error --}}
+{{!-- Renamed Trigger to type due to error / list of triggers --}}
 <div class="row">
 {{#each model as |singleTrigger|}}
   {{service-trigger class="col-sm-6" type=singleTrigger}}
